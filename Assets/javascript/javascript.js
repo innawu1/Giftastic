@@ -24,7 +24,7 @@ var gifDisplay = {gifArray: [],
 };
 
 //Object for Giphy API
-var api = {baseUrl: 'https://api.giphy.com/v1/gifs/search',
+var api = {baseUrl: 'http://api.giphy.com/v1/gifs/search',
 		   queryParams: {
 		   	api_key: 'dc6zaTOxFJmzC',
 		   	limit: 10
