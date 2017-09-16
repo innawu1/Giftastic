@@ -7,22 +7,47 @@
   <title>Giftastic!</title>
   <link rel ="stylesheet" type="text/css" href="Assets/css/reset.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
   </script>
   <script type="text/javascript" src="Assets/javascript/javascript.js"></script>
 </head>
 
 <body>
-<div class = "container">
-	<div class = "row">
-	<span id = "search-buttons"></span>
-	</div>
+<div class = "container-fluid">
+
+<div class= "jumbotron">
+	<h1 class= "text-center">Gif Search</h1>
+	<p class="text-center">Enter the types of gifs that you want to see in the search bar</p>
+	<p class = "text-center">Click on the buttons that appear to see your gifs</p>
+	<p class ="text-center">Click on the image to start the gif and click again to pause it</p>
 </div>
 
-<div class = "container">
-	<div class = "row ">
+<br/>
+
+<div class = "row">
+	<div id = "gif-view"></div>
+</div>
+
+<br/>
+
+<div class = "row ">
+	 <div class = "col-lg-9" id="gifs-appear-here"></div>
+
+	 <div class = "col-lg-3">
+	 <form id = "gif-form">
+	 	<div class="panel panel-primary">
+	  <label for = "gif-input" class="panel-heading">Search:</label>
+	  <div class="panel-body">
+	  <input type = "text" id="gif-input">
+	  <input id="add-gif" type="submit" value="Submit" class= "btn btn-default">
+	  </div>
+	</div>
+	  </form>
+
 	</div>
 	</div>
+</div>
 
 
 
